@@ -1,0 +1,13 @@
+
+.item {
+    background-color: red;
+    width: 100vw;
+    height: 75vh;
+}
+
+.item > img {
+    /* height: 100%; */
+    width: 100%;
+    object-position: 0px -120px;
+    /* background: black; */
+}
