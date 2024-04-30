@@ -1,10 +1,31 @@
 :root {
+    --primary-color: #eb202e;
     --primary-color: #B1000E;
+    --primary-light-color: #b1000fc9;
     --secondary-color: #D9D9D9;
     --dark-color: #4D4D4D;
     --black: #2D2D2D;
     --background: #fcfcfc;
+    --background-dark: #2c2e2f;
 }
+
+
+.open-sans-300 {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300 !important;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+.default-font{
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:"wdth" 100; 
+}
+
 
 
 * {
@@ -12,6 +33,7 @@
   font-optical-sizing: auto;
   font-style: normal;
   font-variation-settings:"wdth" 100;
+  box-sizing: border-box;
 }
 
 body {
@@ -20,6 +42,7 @@ body {
     font-optical-sizing: auto;
     font-style: normal;
     font-variation-settings:"wdth" 100;
+    overflow-x: hidden;
 }
 
 .primary-color{
@@ -36,7 +59,7 @@ body {
 
 .btn-whats{
     border-radius: 50%;
-    position: absolute;
+    position: fixed;
     z-index: 2;
     background-color: #25d366;
     color: white;

@@ -1,24 +1,195 @@
-.our-service{
-    height: 750px;
+.our-service {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    width: 100%;
+    height: 600px;
+    position: relative;
+
+}
+
+.our-service-img {
+    background-image: url("../images/ourservice.jpg");
+    background-color: #fff !important;
+    background-size: cover;
+    position: absolute;
+    z-index: -2;
+    height: 100%;
+    width: 100%;
+    /* filter: grayscale(70%); */
+}
+
+
+.our-service-img-blur {
+    position: absolute;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    background: #0000004f;
 }
 
 .our-service::before {
-    content: "";
-    position: fixed;
-    left: 0;
-    right: 0;
-    z-index: -1;
-  
-    display: block;
-    background-image: url("../images/ourservice.jpg");
-    background-size:cover;
-    width: 100%;
+    background-color: #fff !important;
+}
 
-    height: 750px;
-  
-    -webkit-filter: blur(5px);
-    -moz-filter: blur(5px);
-    -o-filter: blur(5px);
-    -ms-filter: blur(5px);
-    filter: blur(5px);
-  }
+.our-service-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2rem;
+    color: white;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+
+.our-service-title>p {
+    font-weight: 800;
+    font-size: 5rem;
+}
+
+.card-service {
+    width: 500px;
+    height: 150px;
+    background: white;
+    display: flex;
+    overflow: hidden;
+}
+
+.card-service-img {
+    height: 150px;
+    width: 150px;
+    background: white;
+}
+
+.card-service-img>img {
+    height: 150px;
+    width: 150px;
+}
+
+.card-service-detail {
+    padding: 16px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background: linear-gradient(to bottom, var(--primary-color) 65%, var(--primary-light-color));
+
+}
+
+.card-service-detail .title {
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.card-service-detail .body {
+    font-size: 0.850rem;
+    font-weight: 200;
+    text-align: left;
+    line-height: 1rem;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    overflow: hidden;
+    -webkit-box-orient: vertical; 
+}
+
+.card-service:nth-child(1) {
+    grid-area: leftTop;
+}
+
+.card-service:nth-child(2) {
+    grid-area: rightTop;
+}
+
+.card-service:nth-child(3) {
+    grid-area: leftBottom;
+}
+
+.card-service:nth-child(4) {
+    grid-area: rightBottom;
+}
+
+
+
+.our-service-body {
+    display: grid;
+    grid-template-areas: "leftTop rightTop"
+        "leftBottom rightBottom";
+    gap: 25px;
+}
+
+@media only screen and (max-width: 1060px) {
+
+    .card-service {
+        width: 80%;
+        align-self: center;
+    }
+
+    .our-service-img{
+        top: 0;
+        height: 100px;
+        display: none;
+    }
+    .our-service-img-blur{
+        display: none;
+        top: 0;
+        height: 100px;
+    }
+
+    .our-service {
+        position: relative;
+        background: var(--secondary-color);
+        z-index: -3;
+        height: auto;
+        padding: 16px;
+        gap: 16px;
+    }
+
+    .our-service-body {
+        /* position: absolute; */
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        justify-content: center;
+        /* grid-template-areas: "leftTop"
+            "rightTop"
+            "leftBottom"
+            "rightBottom"
+        ; */
+        gap: 8px;
+    }
+
+    .our-service-title {
+        flex-direction: row;
+    }
+
+    .our-service-title {
+        font-weight: 800 !important;
+        font-size: 2.5rem;
+        font-family: "Open Sans", sans-serif !important;
+        font-optical-sizing: auto;
+        font-style: normal;
+        font-variation-settings: "wdth" 100;
+        color: var(--black);
+        padding: 32px 0px;
+    }
+
+    .our-service-title p {
+        margin-left: 16px;
+        font-weight: 800;
+        font-size: 2.5rem;
+        color: var(--black);
+    }
+
+
+    .card-service-detail .body {
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        overflow: hidden;
+        -webkit-box-orient: vertical; 
+    }
+
+}
