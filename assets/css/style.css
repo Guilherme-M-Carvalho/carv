@@ -26,7 +26,9 @@
     font-variation-settings:"wdth" 100; 
 }
 
-
+section{
+  width: 100vw;
+}
 
 * {
   font-family: "Open Sans", sans-serif;
@@ -74,6 +76,38 @@ body {
     justify-content: center;
     text-decoration: none;
 }
+
+.rajdhani-light {
+    font-family: "Rajdhani", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .rajdhani-regular {
+    font-family: "Rajdhani", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .rajdhani-medium {
+    font-family: "Rajdhani", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .rajdhani-semibold {
+    font-family: "Rajdhani", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  .rajdhani-bold {
+    font-family: "Rajdhani", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+
 /* 
 .apresentation {
     background: #212121;

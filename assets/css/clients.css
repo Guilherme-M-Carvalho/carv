@@ -1,0 +1,87 @@
+.clients {
+    background-color: var(--background);
+    /* min-height: 200px; */
+    padding: 80px 56px;
+    display: flex;
+    gap: 36px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 2rem;
+}
+
+.clients-title {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-weight: 800;
+    font-size: 4rem;
+    color: var(--background-dark);
+    text-transform: uppercase;
+    font-style: thin;
+    text-align: center;
+}
+
+.clients-title>p {
+    font-weight: 100;
+    margin-left: 8px;
+}
+
+
+.carousel-item img {
+    height: 250px;
+    width: 250px !important;
+    border-radius: 50%;
+}
+
+
+
+.card-img {
+    position: relative;
+    padding: 24px;
+    display: flex;
+    justify-content: center;
+    width: fit-content;
+}
+
+.card-img i {
+    position: absolute;
+    color: var(--primary-color);
+    bottom: -8px;
+    margin: auto;
+    display: block;
+    left: 116px;
+}
+
+.carousel-item .comment {
+    line-height: 1rem;
+    font-size: 0.850rem;
+    text-align: center;
+}
+
+.carousel-inner {
+    margin-bottom: 75px;
+}
+
+.carousel-indicators button {
+    background: var(--primary-color) !important;
+    border-radius: 50%;
+    width: 22px !important;
+    height: 2px !important;
+}
+
+@media only screen and (max-width: 768px) {
+    .clients {
+        padding: 80px 25px;
+    }
+
+    .carousel-item .content{
+        width: 100% !important;
+    }
+}
+
+@media only screen and (max-width: 572px) {
+    .clients-title{
+        font-size: 2.5rem;
+    }
+}

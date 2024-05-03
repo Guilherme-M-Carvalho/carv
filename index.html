@@ -11,6 +11,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
         rel="stylesheet">
+
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Rajdhani:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
     <!-- End Font -->
 
     <!-- Start Bootstrap -->
@@ -30,21 +35,29 @@
     <link rel="stylesheet" href="assets/css/header.css">
     <link rel="stylesheet" href="assets/css/aboutus.css">
     <link rel="stylesheet" href="assets/css/bestservices.css">
+    <link rel="stylesheet" href="assets/css/resultguarantee.css">
+    <link rel="stylesheet" href="assets/css/ouradvantages.css">
     <link rel="stylesheet" href="assets/css/ourservice.css">
+    <link rel="stylesheet" href="assets/css/clients.css">
+    <link rel="stylesheet" href="assets/css/whatoffer.css">
     <!-- End Style -->
 </head>
 
 <body>
-    <header class="p-2">
-        <div class="d-flex align-items-center gap-2 justify-content-between px-5">
+    <header class="p-2 shadow-lg">
+        <div class="d-flex align-items-center gap-2 justify-content-between px-5 no-padding">
             <a class="d-flex align-items-center gap-2 text-decoration-none"
-                href="https://maps.app.goo.gl/QauwATgMaA2Bt1jP8" target="_blank" rel="noopener noreferrer">
+                href="https://maps.app.goo.gl/ezminvdswhyBt1ma6" target="_blank" rel="noopener noreferrer">
                 <i class="fa-solid fa-location-dot primary-color"></i>
                 <p class="font-small dark-color">
-                    Avenida Manoel Teixeira Sampaio, 289 - Jardim Presidencial, Avaré, Brazil
+                    Av. Manoel Teixeira Sampaio, 289 - Jardim Presidencial, Avaré - SP, 18706-673
                 </p>
             </a>
             <div class="d-flex align-items-center gap-2">
+                <a href="tel:+5514998464904" class="icon-link text-decoration-none">
+                    <i class="fa-solid fa-phone primary-color"></i>
+
+                </a>
                 <a href="https://www.facebook.com/carv.autocenter?mibextid=ZbWKwL"
                     class="icon-link text-decoration-none" target="_blank">
                     <i class="fa-brands fa-facebook primary-color"></i>
@@ -56,6 +69,29 @@
                 </a>
             </div>
         </div>
+        <nav class="navbar navbar-expand-md bg-transparent px-5 py-0 no-padding">
+            <div class="container-fluid px-0">
+                <a class="navbar-brand logo d-flex rajdhani-bold" href="#">Carv <p class="rajdhani-light">Auto Center</p></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active rajdhani-medium" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link rajdhani-medium" href="#">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link rajdhani-medium" href="#">Pricing</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
     <main>
         <!-- <div class="owl-carousel owl-theme">
@@ -70,9 +106,9 @@
             </div>
         </div> -->
         <section class="about-us">
-            <div class="about-us-title default-font">
+            <div class="about-us-title default-font rajdhani-light">
                 ALGUMAS PALAVRAS
-                <p>
+                <p class="rajdhani-bold">
                     SOBRE NÓS
                 </p>
             </div>
@@ -85,17 +121,14 @@
                     instalações.
                 </p>
             </div>
-            <button class="btn btn-more">
-                SAIBA MAIS
-            </button>
         </section>
         <section class="best-services">
             <div class="p-0">
-                <img src="./assets/images/bestService.jpg">
+                <img src="./assets/images/result.jpg">
                 <div class="best-services-blur"></div>
             </div>
             <div class="best-services-body">
-                <div class="best-service-title default-font">
+                <div class="best-service-title rajdhani-light">
                     Nosso
                     <p>
                         compromisso
@@ -108,12 +141,76 @@
                         necessidades automotivas. Na Carv Auto Center, sua satisfação é nossa prioridade absoluta.
                     </p>
                 </div>
+                <button class="btn btn-more-best">
+                    SAIBA MAIS
+                </button>
             </div>
         </section>
+        <section class="our-advantages">
+            <div class="our-advantages-title rajdhani-light">
+                Nossas
+                <p>
+                    vantagens
+                </p>
+            </div>
+            <div class="our-advantages-body">
+                <div class="content row">
+                    <div class="col-sm-12 col-md-6 d-flex gap-2 flex-row align-items-center justify-content-center">
+                        <div>
+                            <h4 class="h4 align-right mb-2">Todas as marcas de carros</h4>
+                            <p class="body open-sans-300 align-right">
+                                Oferecemos uma variedade de serviços de reparo e manutenção para todas as marcas e
+                                modelos
+                                de automóveis, mesmo para os exóticos e antigos.
+                            </p>
+                        </div>
+                        <!-- <img src="./assets/images/maintenance.png"> -->
+                    </div>
+                    <div class="col-sm-12 col-md-6 d-flex flex-row align-items-center justify-content-center">
+                        <!-- <img src="./assets/images/maintenance.png"> -->
+                        <div>
+
+                            <h4 class="h4 mb-2">Variedade de serviços</h4>
+                            <p class="body open-sans-300">
+                                O principal do nosso trabalho é oferecer uma ampla gama de serviços de reparação
+                                automóvel de qualidade e temos feito isso desde o nosso primeiro dia
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="result-guarantee">
+            <div class="result-guarantee-body">
+                <div class="result-guarante-title rajdhani-light">
+                    Resultado 100%
+                    <p>
+                        Guarantido
+                    </p>
+                </div>
+                <div class="result-guarante-body">
+                    <p class="body open-sans-300">
+
+                        Na Carv Auto Center, a reparação de automóveis representa experiência, valor e profissionalismo
+                        desde o primeiro dia. Continuamos comprometidos em garantir que os resultados de nosso trabalho
+                        atendam plenamente às suas expectativas.
+                    </p>
+                </div>
+                <button class="btn btn-more-result">
+                    SAIBA MAIS
+                </button>
+            </div>
+            <div class="p-0">
+                <img src="./assets/images/bestService.jpg">
+                <div class="result-guarantee-blur"></div>
+            </div>
+
+        </section>
+
         <section class="our-service">
             <div class="our-service-img"></div>
             <div class="our-service-img-blur"></div>
-            <div class="our-service-title">
+            <div class="our-service-title rajdhani-light">
                 Nossos
                 <p>
                     serviços
@@ -181,6 +278,128 @@
                             Rapidamente restauramos a segurança do seu veículo com nossos serviços de reparação de
                             pneus. Desde pequenos furos até danos significativos, nossa equipe realiza reparos
                             profissionais, priorizando qualidade e durabilidade.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="clients">
+            <div class="clients-title rajdhani-light">
+                O que nossos
+                <p>
+                    clientes dizem
+                </p>
+            </div>
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="d-flex flex-column align-items-center">
+                            <div class="p-2 card-img">
+                                <img src="https://media-gru2-2.cdn.whatsapp.net/v/t61.24694-24/409757073_358130286965611_5018120938827817335_n.jpg?ccb=11-4&amp;oh=01_Q5AaIM_8X0BAvUZoZwnUtv3DqwyQY2FiKPc98rFWLfVi2nTf&amp;oe=6640AB0E&amp;_nc_sid=e6ed6c&amp;_nc_cat=105"
+                                    class="d-block w-100" alt="...">
+                                <i class="fa-solid fa-comment"></i>
+                            </div>
+                            <div class="w-50 content mt-4">
+                                <h4 class="h4 text-center rajdhani-bold">
+                                    Guilherme Miranda
+                                </h4>
+                                <p class="comment open-sans-300">
+                                    Ótima oficina e ótimos profissionais!! Souberam explicar e consertar o problema do
+                                    meu carro com transparência e excelência, super recomendo.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="d-flex flex-column align-items-center">
+                            <div class="p-2 card-img">
+                                <img src="https://media-gru2-2.cdn.whatsapp.net/v/t61.24694-24/409757073_358130286965611_5018120938827817335_n.jpg?ccb=11-4&amp;oh=01_Q5AaIM_8X0BAvUZoZwnUtv3DqwyQY2FiKPc98rFWLfVi2nTf&amp;oe=6640AB0E&amp;_nc_sid=e6ed6c&amp;_nc_cat=105"
+                                    class="d-block w-100" alt="...">
+                                <i class="fa-solid fa-comment"></i>
+                            </div>
+                            <div class="w-50 content mt-4">
+                                <h4 class="h4 text-center rajdhani-bold">
+                                    Guilherme Miranda
+                                </h4>
+                                <p class="comment open-sans-300">
+                                    Ótima oficina e ótimos profissionais!! Souberam explicar e consertar o problema do
+                                    meu carro com transparência e excelência, super recomendo.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="d-flex flex-column align-items-center">
+                            <div class="p-2 card-img">
+                                <img src="https://media-gru2-2.cdn.whatsapp.net/v/t61.24694-24/409757073_358130286965611_5018120938827817335_n.jpg?ccb=11-4&amp;oh=01_Q5AaIM_8X0BAvUZoZwnUtv3DqwyQY2FiKPc98rFWLfVi2nTf&amp;oe=6640AB0E&amp;_nc_sid=e6ed6c&amp;_nc_cat=105"
+                                    class="d-block w-100" alt="...">
+                                <i class="fa-solid fa-comment"></i>
+                            </div>
+                            <div class="w-50 content mt-4">
+                                <h4 class="h4 text-center rajdhani-bold">
+                                    Guilherme Miranda
+                                </h4>
+                                <p class="comment open-sans-300">
+                                    Ótima oficina e ótimos profissionais!! Souberam explicar e consertar o problema do
+                                    meu carro com transparência e excelência, super recomendo.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section class="what-offer">
+            <div class="what-offer-title rajdhani-light">
+                o que
+                <p>nós oferecemos</p>
+            </div>
+            <div class="w-75">
+                <div class="row no-gap gap-4">
+                    <div class="col-sm-12 col-md-4 d-flex flex-column align-items-center">
+                        <div class="circle">
+                            01
+                        </div>
+                        <h4 class="h4 mt-2 text-center text-white rajdhani-bold">Manutenção Preventiva e Corretiva</h4>
+                        <p class="comment open-sans-300">
+                            Este serviço abrange uma ampla gama de inspeções, ajustes e reparos destinados a manter o
+                            funcionamento eficiente e seguro do veículo. A manutenção preventiva visa identificar e
+                            resolver problemas antes que se tornem mais graves, enquanto a manutenção corretiva lida com
+                            reparos necessários após a identificação de falhas.
+                        </p>
+                    </div>
+                    <div class="col-sm-12 col-md-4  d-flex flex-column align-items-center">
+                        <div class="circle">
+                            02
+                        </div>
+                        <h4 class="h4 mt-2 text-center text-white rajdhani-bold">Diagnóstico e Reparo de Sistemas
+                            Automotivos</h4>
+                        <p class="comment open-sans-300">
+                            Os serviços de diagnóstico envolvem a utilização de equipamentos especializados para
+                            identificar problemas em sistemas automotivos, como transmissão, suspensão, freios. Uma vez
+                            identificados, os técnicos realizam os reparos necessários para restaurar o desempenho
+                            adequado do veículo.
+                        </p>
+                    </div>
+                    <div class="col-sm-12 col-md-4  d-flex flex-column align-items-center">
+                        <div class="circle">
+                            03
+                        </div>
+                        <h4 class="h4 mt-2 text-center text-white rajdhani-bold">Troca de Óleo e Lubrificação</h4>
+                        <p class="comment open-sans-300">
+                            Esta é uma parte essencial da manutenção preventiva, que envolve a substituição regular do
+                            óleo do motor e a lubrificação de componentes móveis importantes. Uma lubrificação adequada
+                            ajuda a reduzir o desgaste dos componentes do motor, prolongando a vida útil do veículo e
+                            garantindo seu funcionamento suave e eficiente.
                         </p>
                     </div>
                 </div>

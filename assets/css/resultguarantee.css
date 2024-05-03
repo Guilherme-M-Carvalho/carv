@@ -1,25 +1,25 @@
-.best-services {
+.result-guarantee {
     display: flex;
     flex-direction: row;
     height: 500px;
     position: relative;
 }
 
-.best-services>div:first-child {
+.result-guarantee>div:nth-child(2) {
     position: relative;
 }
 
-.best-services>div {
+.result-guarantee>div {
     width: 50%;
 }
 
-.best-services img {
+.result-guarantee img {
     height: 500px;
     width: 100%;
     object-fit: fill;
 }
 
-.best-service-title {
+.result-guarante-title {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -31,14 +31,13 @@
     text-align: center;
 }
 
-.best-service-title>p {
+.result-guarante-title>p {
     font-weight: 800;
     font-size: 3rem;
 }
 
-.best-services-body {
-    background: var(--primary-color);
-
+.result-guarantee-body {
+    background-color: var(--background-dark);
     width: 50%;
     color: white;
     gap: 36px;
@@ -48,42 +47,42 @@
     flex-direction: column;
 }
 
-.best-service-body {
+.result-guarante-body {
     padding: 0px 100px;
     text-align: center;
     font-size: 0.95rem;
     line-height: 1rem;
 }
 
-.best-services-blur {
+.result-guarantee-blur {
     display: none;
 }
 
-.btn-more-best{
-    background: white;
-    color: var(--black);
+.btn-more-result{
+    background: var(--dark-color);
+    color: white;
     font-weight: 600;
     border-radius: 0;
     padding: 8px 16px;
 }
 
-.btn-more-best:hover{
+.btn-more-result:hover{
     color: var(--dark);
     font-weight: 500;
 }
 
 @media only screen and (max-width: 1060px) {
-    .best-services {
+    .result-guarantee {
         height: auto;
         max-height: 500px;
         flex-direction: column !important;
     }
 
-    .best-services>div {
+    .result-guarantee>div {
         width: 100%;
     }
 
-    .best-services-blur {
+    .result-guarantee-blur {
         display: block;
         height: 100%;
         width: 100%;
@@ -94,7 +93,7 @@
     }
 
 
-    .best-services-body {
+    .result-guarantee-body {
         background: transparent;
         position: absolute;
         z-index: 2;
@@ -104,23 +103,23 @@
 }
 
 
-@media only screen and (max-width: 750px) {
-    .best-services {
+@media only screen and (max-width: 768px) {
+    .result-guarantee {
         max-height: 400px;
 
     }
-    
-    .best-service-body{
+
+    .result-guarante-body{
         padding: 0px 25px;
     }
 
-    .best-services img {
+    .result-guarantee img {
         height: 400px;
     }
 }
 
 @media only screen and (max-width: 572px) {
-    .best-service-title{
+    .result-guarante-title {
         font-size: 2.5rem;
     }
 }
