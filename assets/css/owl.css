@@ -1,13 +1,36 @@
 
-.item {
+.owl-carousel .item {
     background-color: red;
     width: 100vw;
-    height: 75vh;
+    height: 100vh;
 }
 
-.item > img {
+.owl-carousel .item > img {
     /* height: 100%; */
     width: 100%;
-    object-position: 0px -120px;
+    height: 100%;
+    object-fit: cover;
     /* background: black; */
+}
+
+.owl-carousel .item::after {
+    top: 0;
+    position: absolute;
+    content: '';
+    background: #0000006e;
+    z-index: 100;
+    height: 100%;
+    width: 100%;
+    /* backdrop-filter: blur(2px); */
+
+}
+
+
+  
+
+@media only screen and (max-width: 572px) {
+
+    .owl-carousel .item {
+        height: fit-content;
+    }
 }

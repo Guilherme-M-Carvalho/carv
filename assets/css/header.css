@@ -3,6 +3,24 @@ header {
     position: fixed;
     width: 100%;
     z-index: 4;
+    transition: background .3s ease-out;
+}
+
+.address {
+    color: var(--dark-color);
+}
+
+.no-background {
+    /* background: transparent; */
+    background: #0000006e;
+    box-shadow: none !important;
+}
+.no-background .icon-link > i{
+    color: var(--secondary-color);
+}
+
+.no-background .address {
+    color: #fafafa !important;
 }
 
 .logo{
@@ -16,6 +34,15 @@ header {
     margin-left: 8px;
 }
 
+.no-background .logo > p {
+    color: white ;
+}
+
+.no-background .logo:hover{
+    color: var(--primary-color);
+}
+
+
 .navbar-toggler{
     border: none;
     outline: none;
@@ -24,6 +51,16 @@ header {
     box-shadow: none;
 }
 
+.nav-link{
+    text-transform: uppercase;
+}
+
+.no-background-nav .nav-link {
+    color: var(--secondary-color)
+}
+.no-background-nav .nav-link.active {
+    color: var(--primary-color);
+}
 @media only screen and (max-width: 572px) {
     .no-padding{
         padding: 0px !important;
@@ -31,4 +68,11 @@ header {
     .logo{
         font-size: 1.5rem;
     }
+}
+
+.navbar-toggler-icon{
+    background-image: none !important;
+}
+.navbar-toggler-icon i{
+    color: var(--primary-color);
 }

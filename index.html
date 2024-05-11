@@ -20,7 +20,7 @@
 
     <!-- Start Bootstrap -->
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/fontawesome/css/fontawesome.min.css">
+    <!-- <link rel="stylesheet" href="assets/fontawesome/css/fontawesome.min.css"> -->
     <!-- End Bootstrap -->
 
     <!-- Start Owl Carousel -->
@@ -43,13 +43,13 @@
     <!-- End Style -->
 </head>
 
-<body>
-    <header class="p-2 shadow-lg">
+<body id="root">
+    <header class="p-2 shadow-lg no-background">
         <div class="d-flex align-items-center gap-2 justify-content-between px-5 no-padding">
             <a class="d-flex align-items-center gap-2 text-decoration-none"
                 href="https://maps.app.goo.gl/ezminvdswhyBt1ma6" target="_blank" rel="noopener noreferrer">
                 <i class="fa-solid fa-location-dot primary-color"></i>
-                <p class="font-small dark-color">
+                <p class="font-small address">
                     Av. Manoel Teixeira Sampaio, 289 - Jardim Presidencial, Avaré - SP, 18706-673
                 </p>
             </a>
@@ -69,24 +69,27 @@
                 </a>
             </div>
         </div>
-        <nav class="navbar navbar-expand-md bg-transparent px-5 py-0 no-padding">
+        <nav class="navbar navbar-expand-md bg-transparent px-5 py-0 no-padding  no-background-nav">
             <div class="container-fluid px-0">
-                <a class="navbar-brand logo d-flex rajdhani-bold" href="#">Carv <p class="rajdhani-light">Auto Center</p></a>
+                <a class="navbar-brand logo d-flex rajdhani-bold" href="#">Carv <p class="rajdhani-light">Auto Center
+                    </p></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
                     aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon">
+                        <i class="fa-solid fa-bars"></i>
+                    </span>
                 </button>
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link active rajdhani-medium" aria-current="page" href="#">Home</a>
+                            <a class="nav-link active rajdhani-high" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link rajdhani-medium" href="#">Features</a>
+                            <a class="nav-link rajdhani-high" href="#">Features</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link rajdhani-medium" href="#">Pricing</a>
+                            <a class="nav-link rajdhani-high" href="#">Pricing</a>
                         </li>
                     </ul>
                 </div>
@@ -94,17 +97,17 @@
         </nav>
     </header>
     <main>
-        <!-- <div class="owl-carousel owl-theme">
+        <section class="owl-carousel owl-theme">
             <div class="item">
-                <img src="https://img.freepik.com/fotos-gratis/mecanico-masculino-trabalhando-na-loja-em-um-carro_23-2150170042.jpg?t=st=1714397525~exp=1714401125~hmac=e5602c084c950bb2cd87153ac062d36fad9d234c274e264c83be476c74562ba8&w=1380" alt="aa">
+                <img src="/assets/images/banner2/banner1.jpeg" alt="aa">
             </div>
             <div class="item">
-                <img src="https://img.freepik.com/fotos-gratis/mecanica-feminina-trabalhando-na-loja-em-um-carro_23-2150169967.jpg?t=st=1714397566~exp=1714401166~hmac=de39ef17752a7553647a68a11c3e27f7a6185968645e6101d598ec4ca048788b&w=1380" alt="aa">
+                <img src="/assets/images/banner2/banner2.jpeg" alt="aa">
             </div>
             <div class="item">
-                <img src="https://img.freepik.com/fotos-premium/composicao-de-negocios-de-reparacao-de-automoveis_23-2147881823.jpg?w=1380" alt="aa">
+                <img src="assets/images/banner2/banner3.jpeg" alt="aa">
             </div>
-        </div> -->
+        </section>
         <section class="about-us">
             <div class="about-us-title default-font rajdhani-light">
                 ALGUMAS PALAVRAS
@@ -360,8 +363,8 @@
         </section>
         <section class="what-offer">
             <div class="what-offer-title rajdhani-light">
-                o que
-                <p>nós oferecemos</p>
+                o que nós
+                <p>oferecemos</p>
             </div>
             <div class="w-75">
                 <div class="row no-gap gap-4">
@@ -418,6 +421,7 @@
     <script src="https://kit.fontawesome.com/0c233eeafa.js" crossorigin="anonymous"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/owl.js"></script>
+    <script src="assets/js/header.js"></script>
 </body>
 
 </html>
