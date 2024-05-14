@@ -23,7 +23,7 @@
     display: flex;
     align-items: center;
     font-weight: 800;
-    font-size: 4rem;
+    font-size: 5rem;
     color: var(--background-dark);
     text-transform: uppercase;
     font-style: thin;
@@ -31,6 +31,7 @@
 }
 
 .our-advantages-title>p {
+    font-size: 5rem;
     font-weight: 100;
     margin-left: 8px;
 }
@@ -74,6 +75,9 @@
     .our-advantages-title {
         flex-direction: column;
     }
+    .our-advantages-title > p {
+        font-size: 2.5rem;
+    }
 
     .our-advantages-body .content h4 {
         text-align: center !important;
@@ -89,9 +93,3 @@
 
 }
 
-
-@media only screen and (max-width: 572px) {
-    .our-advantages-title{
-        font-size: 2.5rem;
-    }
-}

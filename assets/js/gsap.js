@@ -27,7 +27,6 @@ $(document).ready(function () {
             start: 'top bottom',
             end: 'bottom top',
             start: "0px 95%",
-            toggleClass: 'no-background',
         },
     })
 
