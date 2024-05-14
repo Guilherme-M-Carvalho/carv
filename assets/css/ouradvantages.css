@@ -10,6 +10,14 @@
     font-size: 2rem;
 }
 
+.left-advantages{
+    /* opacity: 1; */
+}
+
+.right-advantages{
+    /* opacity: 1; */
+}
+
 .our-advantages-title {
     display: flex;
     align-items: center;

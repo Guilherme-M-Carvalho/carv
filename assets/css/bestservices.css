@@ -5,9 +5,9 @@
     position: relative;
 }
 
-.best-services>div:first-child {
+/* .best-services>div:first-child {
     position: relative;
-}
+} */
 
 .best-services>div {
     width: 50%;
@@ -36,8 +36,13 @@
     font-size: 3rem;
 }
 
-.best-services-body {
+.best-services{
     background: var(--primary-color);
+
+}
+
+.best-services-body {
+    background: transparent;
 
     width: 50%;
     color: white;
@@ -89,13 +94,13 @@
         width: 100%;
         position: absolute;
         z-index: 1;
-        background: #0000004f;
+        background: #0000006e;
         top: 0;
     }
 
 
     .best-services-body {
-        background: transparent;
+        /* background: red; */
         position: absolute;
         z-index: 2;
         height: 100%;

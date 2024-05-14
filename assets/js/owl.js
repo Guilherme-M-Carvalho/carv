@@ -2,7 +2,7 @@ $('.owl-carousel').owlCarousel({
     loop:true,
     nav:true,
     autoWidth:true,
-    items:3
+    items:5
     // responsive:{
     //     0:{
     //         items:1

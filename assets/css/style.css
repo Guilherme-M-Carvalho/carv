@@ -1,12 +1,12 @@
 :root {
-    --primary-color: #eb202e;
-    --primary-color: #B1000E;
-    --primary-light-color: #b1000fc9;
-    --secondary-color: #D9D9D9;
-    --dark-color: #4D4D4D;
-    --black: #2D2D2D;
-    --background: #fcfcfc;
-    --background-dark: #2c2e2f;
+  --primary-color: #eb202e;
+  --primary-color: #B1000E;
+  --primary-light-color: #b1000fc9;
+  --secondary-color: #D9D9D9;
+  --dark-color: #4D4D4D;
+  --black: #2D2D2D;
+  --background: #fcfcfc;
+  --background-dark: #2c2e2f;
 }
 
 
@@ -19,14 +19,14 @@
     "wdth" 100;
 }
 
-.default-font{
-    font-family: "Open Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-    font-variation-settings:"wdth" 100; 
+.default-font {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
 }
 
-section{
+section {
   width: 100vw;
 }
 
@@ -34,82 +34,136 @@ section{
   font-family: "Open Sans", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
-  font-variation-settings:"wdth" 100;
+  font-variation-settings: "wdth" 100;
   box-sizing: border-box;
 }
 
-html body {
-    background-color: var(--background);
-    font-family: "Open Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-    font-variation-settings:"wdth" 100;
-    overflow: hidden;
-    overflow-y: auto;
-    height: 100vh;
-    width: 100vw;
+html, body {
+  background-color: var(--background);
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  overflow-x: hidden;
+  overflow-y: auto;
+  height: 100vh;
+  width: 100vw;
 }
 
-.primary-color{
-    color: var(--primary-color);
+.primary-color {
+  color: var(--primary-color);
 }
 
-.dark-color{
-    color: var(--dark-color);
+.dark-color {
+  color: var(--dark-color);
 }
 
-.font-small{
-    font-size: 0.8rem;
+.font-small {
+  font-size: 0.8rem;
 }
 
-.btn-whats{
-    border-radius: 50%;
-    position: fixed;
-    z-index: 2;
-    background-color: #25d366;
-    color: white;
-    right: 50px;
-    bottom: 30px;
-    padding: 12px;
-    height: 60px;
-    width: 60px;
-    font-size: 24px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
+@keyframes animationWhats {
+
+  4.5%,
+  10.5% {
+    transform: translate(0px, 0px) rotate(0deg);
+  }
+
+  5% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+
+  5.5% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+
+  6% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+
+  6.5% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+
+  7% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+
+  7.5% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+
+  8% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+
+  8.5% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+
+  9% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+
+  9.5% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+
+  10% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+
+.btn-whats {
+  border-radius: 50%;
+  position: fixed;
+  z-index: 200;
+  background-color: #25d366;
+  color: white;
+  right: 50px;
+  bottom: 30px;
+  padding: 12px;
+  height: 60px;
+  width: 60px;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  opacity: 1;
+  animation: animationWhats 5s infinite;
 }
 
 .rajdhani-light {
-    font-family: "Rajdhani", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-  }
-  
-  .rajdhani-regular {
-    font-family: "Rajdhani", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-  .rajdhani-medium {
-    font-family: "Rajdhani", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-  }
-  
-  .rajdhani-semibold {
-    font-family: "Rajdhani", sans-serif;
-    font-weight: 600;
-    font-style: normal;
-  }
-  
-  .rajdhani-bold {
-    font-family: "Rajdhani", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-  }
-  
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.rajdhani-regular {
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.rajdhani-medium {
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.rajdhani-semibold {
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.rajdhani-bold {
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
 
 /* 
 .apresentation {

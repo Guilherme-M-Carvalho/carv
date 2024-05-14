@@ -12,7 +12,7 @@ const handleToggleClass = (elem, classStr = "no-background") => {
     }
 }
 
-$(document).on("scroll", (event) => {
-    handleToggleClass("header", "no-background")
-    handleToggleClass("nav", "no-background-nav")
-});
+// $(document).on("scroll", (event) => {
+//     handleToggleClass("header", "no-background")
+//     handleToggleClass("nav", "no-background-nav")
+// });
