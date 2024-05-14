@@ -1,6 +1,7 @@
 .result-guarantee {
     display: flex;
     flex-direction: row;
+    background-color: var(--background-dark);
     height: 500px;
     position: relative;
 }
@@ -37,7 +38,7 @@
 }
 
 .result-guarantee-body {
-    background-color: var(--background-dark);
+    opacity: 1;
     width: 50%;
     color: white;
     gap: 36px;
