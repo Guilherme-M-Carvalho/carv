@@ -46,8 +46,11 @@ html, body {
   font-variation-settings: "wdth" 100;
   overflow-x: hidden;
   overflow-y: auto;
-  height: 100vh;
-  width: 100vw;
+  /* width: 100vw; */
+}
+
+body {
+  overflow: hidden;
 }
 
 .primary-color {
