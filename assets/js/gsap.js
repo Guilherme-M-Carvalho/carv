@@ -83,7 +83,7 @@ $(document).ready(function () {
     })
 
     // animation our-advantages
-    gsap.from('.right-advantages', {
+    gsap.from('.our-advantages', {
         scrollTrigger: {
             trigger: '.our-advantages',
             // markers: true,
