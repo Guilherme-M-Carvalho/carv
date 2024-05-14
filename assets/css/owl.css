@@ -6,7 +6,7 @@
     height: 100%;
 }
 
-.owl-carousel{
+.owl-carousel {
     width: 100vw;
     max-height: 100vh;
     aspect-ratio: 4/3;
@@ -20,35 +20,47 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    display: flex;
+    backdrop-filter: brightness(60%);
+    align-items: center;
+    justify-content: center;
 }
 
-.owl-carousel .item > img {
-    /* height: 100%; */
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: top;
-    /* /* object-position: left top; */
-    /* background: black; */
-}
-
-.owl-carousel .item::after {
+.owl-carousel .item::before {
     top: 0;
     position: absolute;
     content: '';
-    background: #0000006e;
+    /* backdrop-filter: blur(2px); */
+    /* backdrop-filter: brightness(60%); */
+    /* backdrop-filter: contrast(40%);
+    backdrop-filter: drop-shadow(4px 4px 10px blue);
+    backdrop-filter: grayscale(30%);
+    backdrop-filter: hue-rotate(120deg);
+    backdrop-filter: invert(70%);
+    backdrop-filter: opacity(20%);
+    backdrop-filter: sepia(90%); */
+    /* backdrop-filter: saturate(80%); */
     z-index: 100;
     height: 100%;
     width: 100%;
     /* backdrop-filter: blur(2px); */
-    
 }
+
+.legend-carousel {
+    background: #0000006e;
+    padding: 16px;
+    width: 50%;
+    font-size: 1.5rem;
+    text-align: center;
+    color: white;
+}
+
 .owl-carousel .item:nth-child(1) img {
     object-position: bottom;
 }
 
 
-  
+
 
 @media only screen and (max-width: 572px) {
 
