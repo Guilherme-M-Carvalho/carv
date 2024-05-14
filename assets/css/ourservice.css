@@ -62,12 +62,14 @@
 .card-service-img {
     content: " ";
     height: 150px;
+    aspect-ratio: 1/1;
     width: 150px;
     background: white;
 }
 
 .card-service-img>img {
     height: 150px;
+    aspect-ratio: 1/1;
     width: 150px;
 }
 

@@ -16,7 +16,7 @@
 .best-services img {
     height: 500px;
     width: 100%;
-    object-fit: fill;
+    object-fit: cover;
 }
 
 .best-service-title {

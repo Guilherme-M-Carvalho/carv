@@ -17,7 +17,7 @@
 .result-guarantee img {
     height: 500px;
     width: 100%;
-    object-fit: fill;
+    object-fit: cover;
 }
 
 .result-guarante-title {
