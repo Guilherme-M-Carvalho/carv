@@ -147,6 +147,26 @@ $(document).ready(function () {
         opacity: 0,
         duration: 1
     })
+    gsap.from('.card-amortecedor', {
+        scrollTrigger: {
+            trigger: '.card-amortecedor',
+            // markers: true,
+            start: 'center bottom',
+        },
+        x: -(window.innerWidth / 2),
+        opacity: 0,
+        duration: 1
+    })
+    gsap.from('.card-bucha', {
+        scrollTrigger: {
+            trigger: '.card-bucha',
+            // markers: true,
+            start: 'center bottom',
+        },
+        x: (window.innerWidth / 2),
+        opacity: 0,
+        duration: 1
+    })
 
     gsap.from('.what-offer-one', {
         scrollTrigger: {
