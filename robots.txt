@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: https://carvautocenter.com.br/index.html
+Sitemap: https://carvautocenter.com.br/sitemap.xml
