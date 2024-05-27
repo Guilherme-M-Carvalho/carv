@@ -9,6 +9,8 @@
 
 }
 
+
+
 .our-service-img {
     background-image: url("../images/ourservice.jpg");
     background-color: #fff !important;
@@ -66,6 +68,12 @@
     width: 150px;
     background: white;
 }
+
+.card-amortecedor .card-service-img{
+    display: block;
+    background-image: url("../images/amortecedor150X150.jpg");
+}
+
 
 .card-service-img>img {
     height: 150px;
@@ -239,4 +247,5 @@
         overflow: hidden;
         -webkit-box-orient: vertical; 
     }
+
 }
