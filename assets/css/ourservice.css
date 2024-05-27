@@ -69,12 +69,6 @@
     background: white;
 }
 
-.card-amortecedor .card-service-img{
-    display: block;
-    background-image: url("../images/amortecedor150X150.jpg");
-}
-
-
 .card-service-img>img {
     height: 150px;
     aspect-ratio: 1/1;
