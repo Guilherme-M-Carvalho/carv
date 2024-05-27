@@ -1,7 +1,5 @@
 
 $(document).ready(function () {
-    console.log("carregou");
-
     const btnWhats = $(".btn-whats")
     const header = $(".header-sys")
     const navbar = $(".navbar")
