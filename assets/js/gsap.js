@@ -28,15 +28,17 @@ $(document).ready(function () {
         },
     })
 
-    gsap.from(btnWhats, {
-        opacity: 0,
-        duration: 2,
-        // x: 100
-    })
+
 
     const w = window.innerWidth;
-    // animation about-us
     if(w > 1099){
+        
+        gsap.from(btnWhats, {
+            opacity: 0,
+            duration: 2,
+            // x: 100
+        })
+        // animation about-us
         gsap.from('.about-move', {
             scrollTrigger: {
                 trigger: '.about-us',
