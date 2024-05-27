@@ -7,8 +7,6 @@ function setImgByFolder(folder) {
 }
 
 
-
-
 function handleSetImages() {
     const w = window.innerWidth;
     if (w > 640) {

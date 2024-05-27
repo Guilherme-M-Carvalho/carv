@@ -34,18 +34,21 @@ $(document).ready(function () {
         // x: 100
     })
 
+    const w = window.innerWidth;
     // animation about-us
-    gsap.from('.about-move', {
-        scrollTrigger: {
-            trigger: '.about-us',
-            // markers: true,
-            start: 'bottom bottom',
-
-        },
-        x: -(window.innerWidth / 2),
-        opacity: 0,
-        duration: 1
-    })
+    if(w > 1099){
+        gsap.from('.about-move', {
+            scrollTrigger: {
+                trigger: '.about-us',
+                // markers: true,
+                start: 'bottom bottom',
+    
+            },
+            x: -(window.innerWidth / 2),
+            opacity: 0,
+            duration: 1
+        })
+    }
 
     const widthX = (window.innerWidth / 2)
 
