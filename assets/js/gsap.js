@@ -31,7 +31,7 @@ $(document).ready(function () {
 
 
     const w = window.innerWidth;
-    if(w > 1099){
+    // if(w > 1099){
         
         gsap.from(btnWhats, {
             opacity: 0,
@@ -50,7 +50,7 @@ $(document).ready(function () {
             opacity: 0,
             duration: 1
         })
-    }
+    // }
 
     const widthX = (window.innerWidth / 2)
 
