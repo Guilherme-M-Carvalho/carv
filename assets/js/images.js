@@ -11,7 +11,6 @@ function setImgByFolder(folder) {
 
 function handleSetImages() {
     const w = window.innerWidth;
-    console.log({ w });
     if (w > 640) {
         setImgByFolder("banner")
     } else if (w > 320) {
